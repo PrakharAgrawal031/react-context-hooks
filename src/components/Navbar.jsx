@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import { ThemeContext } from '../contexts/ThemeContext';
 
 class Navbar extends Component {
+    static contextType = ThemeContext;
     
-    render() { 
+    render() {
+        console.log(this.context) 
         return (
             <nav>
                 <h1>Read-List</h1>
