@@ -1,4 +1,4 @@
-import React, {createContext, Component, Children } from 'react'
+import React, {createContext, Component} from 'react'
 
 export const ThemeContext = createContext();
 
@@ -6,7 +6,7 @@ class ThemeProvider extends Component {
     state = { 
         isLightTheme: true,
         light: {color: '#010101', ui:'#3BEEB7', bg:'#F4F9FD' },
-        dark: {color:'#010101', ui: '#3BEEB7', bg:'#484846'}
+        dark: {color:'#ddd', ui: '#333', bg:'#555'}
      } 
 
      toggleTheme=()=>{
